@@ -1,0 +1,162 @@
+*{
+  font-family: sans-serif;
+}
+.overall{
+    margin-left: 10px;
+}
+.cardContainer{
+    height: 520px;
+    width: 350px;
+    background-color: white;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.4s ease-in-out;
+    bottom: 10px;
+    margin-left: 30px;
+}
+.cc{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: auto;
+    max-width: 520px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50px;
+    
+}
+.cardContainer:hover{
+    box-shadow: 0px 2px 6px;
+    cursor: pointer;
+}
+.imgContainer{
+    height: 150px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 30px;
+    
+}
+.imgContainer #img{
+    background-position: center;
+    object-fit: cover;
+    height: 190px;
+    width: 300px;
+    padding-bottom: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: none;
+    margin-bottom: 10px;
+}
+.cardContent{
+    height: 320px;
+    width: 510px;
+    margin: 10px;
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ #title{
+    font-size: 2rem;
+    width: auto;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+ #author{
+    font-size: 1.5rem;
+    height: 120px;
+    width: auto;
+    position: relative;
+    top: -5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+ #genre{
+    background-color: rgb(146, 189, 81);
+    height: 50px;
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    top: -23px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    font-size: 1.2rem;
+    color: white;
+}
+.status{
+    height: 80px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.inner{
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner #innerStatus{
+    position: relative;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline ;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 300px;
+}
+.inner img{
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    border-radius: 25px;
+}
+.secondInner{
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondInner .heartIcon{
+   height : 30px;
+   width : 30px; 
+   transition: all 0.2s ease-out;
+}
+.secondInner .heartIcon:hover{
+   height: 40px;
+   width: 40px;
+}

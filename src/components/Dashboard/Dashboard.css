@@ -1,0 +1,50 @@
+*{
+    font-family: sans-serif;
+}
+.DashContainer{
+    margin: 10px;
+    position: relative;
+    top: 2px;
+    width: auto;
+    height: 40%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.card{
+    margin: 20px;
+    height: 190px;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0px 2px 6px;
+}
+.Dashhead{
+    font-size: larger;
+    font-size: 2rem;
+    margin-top: 50px;
+    position: relative;
+    top: -40px;
+    font-weight: 400;
+    color: rgb(83, 82, 82);
+}
+.count{
+    
+    font-size: 2rem;
+    position: relative;
+    bottom: 10px;
+    color: rgb(83, 82, 82);
+}

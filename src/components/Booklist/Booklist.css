@@ -1,0 +1,21 @@
+.listContainer{
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    margin: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+    gap: 10px;
+}
