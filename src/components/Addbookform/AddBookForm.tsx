@@ -151,7 +151,7 @@ const newBook = {
           {errors.genre && <span className='err'>{errors.genre}</span>}
 
           <label>Published Year:</label>
-          <input id='y' type='number' name='year' value={formData.year} onChange={formDataFunc} />
+          <input id='y' type='number' name='year' min="1000" max="9999" value={formData.year} onChange={formDataFunc} />
           {errors.year && <span className='err'>{errors.year}</span>}
 
           <label>Status:</label>
