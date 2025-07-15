@@ -17,7 +17,7 @@ export const dummyBooks:Book[] = [
     author: "Harper Lee",
     genre: "Fiction",
     publishedYear: 1960,
-    coverImage: `${mockingbird}`,
+    coverImage: mockingbird,
     isRead: true,
     isFavorite: true,
     createdAt: "2024-01-10T09:00:00Z",

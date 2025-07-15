@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import EditBookForm from '../../src/components/Editbookform/EditBookForm';
 import type { Book } from '../types';
 import '../../src/components/About/About.css'
-import { read, update, delte } from '../utils/Utils';
+import { read , update , delte} from '../utils/Utils';
 
 const About: React.FC = () => {
   const { bookid } = useParams();
@@ -28,25 +28,24 @@ useEffect(() => {
   const showEditForm = () => setEditForm(true);
   const closeEditForm = () => setEditForm(false);
 
-  const handleUpdate = (updatedBook: Book) => {
-    const books = read();
-    const updatedList = update(books, updatedBook);
-    setCurrentBook(updatedBook);
-  };
+const handleUpdate = (updatedBook: Book) => {
+  const books = read();                        
+  const updatedList = update(books, updatedBook); 
+  setCurrentBook(updatedBook);                
+};
 
-  const handleDelete = () => {
-      const confirmDelete = confirm('Are you sure you want to delete this book?');
+const handleDelete = () => {
+  const confirmDelete = confirm('Are you sure you want to delete this book?');
   if (!confirmDelete) return;
-    const books = read();
-    const updatedList = delte(books, currentBook.id);
-    alert('Book deleted');
-    window.location.href = '/';
-  };
+
+  const books = read();
+  const updatedList = delte(books, currentBook.id); 
+  window.location.href = '/'; 
+};
 
   const markAsReading = () => {
     const updatedBook = { ...currentBook, status: 'reading' as Book['status'] };
     const books = read();
-    const updatedList = update(books, updatedBook);
     setCurrentBook(updatedBook);
     alert('Book Marked as Reading')
   };

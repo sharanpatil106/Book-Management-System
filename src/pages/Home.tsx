@@ -1,15 +1,6 @@
 import { useState, useEffect } from 'react'
-
-//data
-import { dummyBooks } from '../../src/data/dummyData'
-
-//function
-import { create, update, delte, read } from '../utils/Utils';
-
-//type
+import { create, read } from '../utils/Utils';
 import type { Book } from '../types';
-
-//components
 import AddBookForm from '../components/Addbookform/AddBookForm'
 import Navbar from '../components/Navbar/Navbar'
 import Dashboard from '../components/Dashboard/Dashboard'
@@ -80,7 +71,6 @@ useEffect(() => {
 }, [searchTerm]);
 
 
- 
 useEffect(() => {
   applyFilters(selectedGenre, selectedStatus, isFav, searchTerm);
 }, [books]);
@@ -112,15 +102,6 @@ const AddBook = (formData: {
 
   setBooks((prev) => create(prev, newBook));
 };
-
-
-  const updateBook = (bookUpdate:Book) => {
-    setBooks(prev => update(prev, bookUpdate))
-  }
-
-  const deleteBook = (id: number) => {
-    setBooks(prev => delte(prev, id))
-  }
 
   const handleAddClick=()=>{
     setShowAddForm(true)

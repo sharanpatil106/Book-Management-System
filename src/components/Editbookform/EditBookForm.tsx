@@ -133,7 +133,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           {formData.coverImage && (
             <img src={formData.coverImage} alt="Preview" className="preview" />
           )}
-
+          
           <div className="button-group">
             <button type="submit" className="save-btn">Save</button>
             <button type="button" className="cancel-btn" onClick={formClose}>Cancel</button>
@@ -141,7 +141,6 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         </form>
       </div>
     </div>
-
     </FocusTrap>
   );
 }

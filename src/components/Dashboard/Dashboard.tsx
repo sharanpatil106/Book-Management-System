@@ -12,7 +12,6 @@ const Dashboard: React.FC<DashboardProps>=({books})=>{
     const favorites = books.filter(book=>book.isFavorite).length
     const finished = books.filter(book=>book.status==='finished').length
     
-
   return (
     <div className='DashContainer'>
       <div className='card'>
