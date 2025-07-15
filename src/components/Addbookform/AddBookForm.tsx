@@ -87,7 +87,14 @@ const handleSubmit = (e: FormEvent) => {
   if (!formData.title.trim()) newErrors.title = 'Title is required';
   if (!formData.author.trim()) newErrors.author = 'Author is required';
   if (!formData.genre) newErrors.genre = 'Genre is required';
-  if (!formData.year.trim() || !/^\d{4}$/.test(formData.year)) newErrors.year = 'Valid 4-digit year required';
+  if (!formData.year.trim() || !/^\d{4}$/.test(formData.year)) {
+  newErrors.year = 'Valid 4-digit year required';
+} else {
+  const yearNum = parseInt(formData.year, 10);
+  if (yearNum < 1000 || yearNum > 9999) {
+    newErrors.year = 'Year must be between 1000 and 9999';
+  }
+}
   if (!formData.readingStatus) newErrors.readingStatus = 'Status is required';
   if (!formData.image) newErrors.image = 'Image is required';
 
