@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../components/Filterbar/FilterBar.css'
+import '../../components/Filterbar/Filterbar.css'
 
 interface FilterBarProps {
     onFilterStatus: (status: string) => void
