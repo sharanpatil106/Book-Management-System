@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
  
-    <BrowserRouter basename="/Book-Management-System">
+    <BrowserRouter basename={basename}>
     <App />
     </BrowserRouter>
  
