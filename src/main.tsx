@@ -1,16 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
+// Dynamically set basename depending on the host
+const isGitHubPages = window.location.hostname.includes("github.io");
+const basename = isGitHubPages ? "/Book-Management-System" : "/";
 
-const basename = import.meta.env.VITE_BASENAME || "";
-
-createRoot(document.getElementById('root')!).render(
- 
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
     <BrowserRouter basename={basename}>
-    <App />
+      <App />
     </BrowserRouter>
- 
-)
+  </React.StrictMode>
+);
+
